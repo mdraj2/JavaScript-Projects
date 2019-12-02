@@ -1,0 +1,73 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --hour-degrees: -90;
+    --min-degrees : -90;
+    --sec-degrees: -90;
+}
+
+body {
+    box-sizing: content-box;
+}
+
+.clock {
+    background-color: blue;
+    height: 100vh;
+}
+
+.clock__frame {
+    border: 2rem solid white;
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+.clock__inner {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+.clock__time--hour {
+    background-color: pink;
+    height: 0.5rem;
+    width: 49%;
+    transform-origin: 6% 50%;
+    transform: translate(100%,50%);
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+}
+
+.clock__time--min {
+    background-color: red;
+    height: 0.5rem;
+    width: 49%;
+    transform-origin: 6% 50%;
+    transform: translate(100%,50%);
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+}
+
+.clock__time--sec{
+    background-color: yellow;
+    height: 0.5rem;
+    width: 49%;
+    transform-origin: 6% 50%;
+    transform: translate(100%,50%);
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+}
