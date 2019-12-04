@@ -1,0 +1,22 @@
+*,*::before,*::after {
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#canvas {
+    border: 1px solid black;
+
+}
+
